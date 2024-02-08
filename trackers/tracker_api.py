@@ -18,12 +18,12 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 
-from utils.utils import *
-from utils.log import logger
-from utils.kalman_filter import KalmanFilter
+from trackers.utils.utils import *
+from trackers.utils.log import logger
+from trackers.utils.kalman_filter import KalmanFilter
 from tracking.matching import *
 from tracking.basetrack import BaseTrack, TrackState
-from utils.transform import build_transforms
+from trackers.utils.transform import build_transforms
 from ReidModels.ResBnLin import ResModel
 from ReidModels.osnet import *
 from ReidModels.osnet_ain import osnet_ain_x1_0
